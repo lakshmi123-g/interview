@@ -1,0 +1,79 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form,
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.expired {
+  background: #ffe5e5;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.cards div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.action-buttons {
+  display: flex;
+  gap: 10px;   /* space between buttons */
+}
