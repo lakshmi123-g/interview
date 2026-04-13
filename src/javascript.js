@@ -281,3 +281,25 @@ const obj = {
 const fn = obj.getValue;
 console.log(fn());
 
+const obj1 = {
+  value: 100,
+  normal: function () {
+    return this.value;
+  },
+  arrow: () => {
+    return this.value;
+  }
+};
+
+console.log(obj1.normal());
+console.log(obj1.arrow());
+
+Promise.resolve(1)
+  .then(x => x + 1)
+  .then(x => {
+    throw new Error("Error");
+  })
+  .then(x => console.log(x))
+  .catch(err => console.log("Caught"))
+  .then(() => console.log("After Catch"));
+
